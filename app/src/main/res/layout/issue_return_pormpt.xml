@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:id="@+id/prompt_icon" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id: "
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <!--<AutoCompleteTextView-->
+            <!--android:id="@+id/prompt_id"-->
+            <!--android:fontFamily="sans-serif-smallcaps"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:padding="12dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/prompt_id"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscriber Id: "
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps" />
+
+        <!--<AutoCompleteTextView-->
+            <!--android:id="@+id/prompt_subscriber_id"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:padding="12dp"-->
+            <!--android:fontFamily="sans-serif-smallcaps"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/prompt_subscriber_id"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

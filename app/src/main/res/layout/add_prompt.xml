@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/add_prompt_book"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Book"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_margin="12dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/add_prompt_toy"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Toy"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_margin="12dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/add_prompt_subscriber"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Subscriber"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_margin="12dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

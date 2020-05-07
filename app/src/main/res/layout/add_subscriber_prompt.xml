@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/add_subscriber_name"
+            android:drawableRight="@drawable/et_name"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="name"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_phone"
+            android:drawableRight="@drawable/et_phone"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_dob"
+            android:focusable="false"
+            android:drawableRight="@drawable/et_date"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Date Of Birth"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_reb"
+            android:drawableRight="@drawable/et_eb"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="REB"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_leb"
+            android:drawableRight="@drawable/et_eb"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="LEB"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_center"
+            android:drawableRight="@drawable/et_eb"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="center"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enrollment Type"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <RadioGroup
+                android:id="@+id/add_subscriber_e_type_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NEW"/>
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OLD"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enrolled For"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <RadioGroup
+                android:id="@+id/add_subscriber_e_for_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RFC"/>
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ETL"/>
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RFC + ETL"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <RadioGroup
+                android:id="@+id/add_subscriber_gender_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- EXTRA INFORMATION -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:text="MIS INFORMATION"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="is he/she a student of ECRE?"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <RadioGroup
+                android:id="@+id/add_subscriber_is_ecre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="yes"/>
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="no"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/add_subscriber_ecre_level"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ecre level"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does he/she belong to an external ECD Committee?"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <RadioGroup
+                android:id="@+id/add_subscriber_is_external_ecd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="yes"/>
+
+                <RadioButton
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="no"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/add_subscriber_external_ecd_name"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ECD name"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_class"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="class studying in"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_board"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="school board(CBSE, SSC...)"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:text="Maternal Information"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/add_subscriber_mother_name"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="name"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_mother_qual"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="qualification"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_mother_occ"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="occupation"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_mother_phone"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_mother_email"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="email address"
+            android:inputType="textEmailAddress"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_mother_lang"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="languages fluent in(english, hindi...)"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:text="Paternal Information"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/add_subscriber_father_name"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="name"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_father_qual"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="qualification"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_father_occ"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="occupation"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_father_phone"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_father_email"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="email address"
+            android:inputType="textEmailAddress"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/add_subscriber_father_lang"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="languages fluent in(english, hindi...)"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+</ScrollView>

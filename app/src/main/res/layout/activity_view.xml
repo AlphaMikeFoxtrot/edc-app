@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ViewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:id="@+id/view_stuff_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/view_stuff_toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                android:gravity="center_vertical"
+                android:textAllCaps="true"
+                tools:text="View BOoks"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/view_stuff_arsenal_len"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Number of books in library: 1023"
+        android:layout_below="@id/view_stuff_toolbar"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/black" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/view_stuff_arsenal_len"
+        android:id="@+id/view_act_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_below="@id/view_stuff_arsenal_len"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/view_act_error"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/view_stuff_bar"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerInParent="true"
+        android:layout_margin="4dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
